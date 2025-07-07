@@ -26,8 +26,8 @@ dm.setup()
 
 train_loader = dm.train_loader
 valid_loader = dm.valid_loader
-VOCAB_SIZE = IWSLTDataModule.tokenizer.vocab_size
-PAD_TOKEN_ID = IWSLTDataModule.tokenizer.pad_token_id
+VOCAB_SIZE = dm.tokenizer.vocab_size
+PAD_TOKEN_ID = dm.tokenizer.pad_token_id
 
 model = Transformer(VOCAB_SIZE, D_MODEL, D_FF, N_HEAD, N_LAYERS, DROPOUT).to(DEVICE)
     
