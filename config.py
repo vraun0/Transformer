@@ -1,0 +1,12 @@
+DEVICE = "cuda:0"
+D_MODEL = 256
+N_HEAD = 8
+N_LAYERS = 4
+D_FF = 1024
+DROPOUT = 0.1
+BATCH_SIZE = 64
+LEARNING_RATE = 0.0001
+EPOCHS = 70
+MAX_LEN = 128
+PATIENCE = 10
+SAVE_PATH = "models/transformer_en_it_2.pt"
