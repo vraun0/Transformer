@@ -1,4 +1,3 @@
-# iwslt_datamodule.py
 from datasets import load_dataset
 from transformers import AutoTokenizer, DataCollatorForSeq2Seq
 from torch.utils.data import DataLoader
